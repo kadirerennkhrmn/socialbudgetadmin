@@ -1,0 +1,62 @@
+
+--- Inspecting city_analytic ---
+Error fetching city_analytic: Could not find the table 'public.city_analytic' in the schema cache
+
+--- Inspecting transactions ---
+Columns: ["id","user_id","title","amount","category","date","is_receipt","created_at"]
+Sample Data: {
+  "id": "6ccd76b7-b3b8-4ba7-9b2e-7101aae24ac3",
+  "user_id": "d09ec178-da5a-436d-8864-0e80cfe9b7e6",
+  "title": "Süt",
+  "amount": 145,
+  "category": "market_food",
+  "date": "2026-01-17",
+  "is_receipt": false,
+  "created_at": "2026-01-17T10:17:48.525512+00:00"
+}
+
+--- Inspecting profiles ---
+Columns: ["id","name","city","job","salary","age_group","plan","is_ghost_mode","created_at","expenditures_object","district","is_leader","leader_region"]
+Sample Data: {
+  "id": "d09ec178-da5a-436d-8864-0e80cfe9b7e6",
+  "name": "4",
+  "city": "İstanbul",
+  "job": "Yazılım Mühendisi",
+  "salary": 35000,
+  "age_group": "25-29",
+  "plan": "FREE",
+  "is_ghost_mode": false,
+  "created_at": "2026-01-17T10:17:40.018591+00:00",
+  "expenditures_object": {
+    "misc": 1000,
+    "health": 500,
+    "culture": 500,
+    "housing": 12000,
+    "savings": 0,
+    "clothing": 1500,
+    "education": 0,
+    "transport": 3000,
+    "market_food": 7500,
+    "restaurants": 2000,
+    "communication": 500,
+    "personal_care": 1000,
+    "subscriptions": 500,
+    "alcohol_tobacco": 500
+  },
+  "district": null,
+  "is_leader": false,
+  "leader_region": null
+}
+
+--- Inspecting community_prices ---
+Columns: ["id","city","district","item_name","price","category","user_id","created_at"]
+Sample Data: {
+  "id": 1,
+  "city": "Bitlis",
+  "district": "Aladağ",
+  "item_name": "Yufka (1kg)",
+  "price": 85,
+  "category": "bakery",
+  "user_id": "11cf5f86-ca55-4c8d-9650-0cdeed743bee",
+  "created_at": "2026-01-19T10:01:09.845841+00:00"
+}
